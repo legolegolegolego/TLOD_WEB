@@ -314,4 +314,20 @@ footer .contact a:hover {
         flex-direction: column;
         gap: 5px;
     }
+
+    /* Ajustamos el logo y el título en dispositivos móviles */
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    /* Aseguramos que la imagen del artículo sea visible y esté alineada correctamente */
+    .article-image img {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
 }
