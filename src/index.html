@@ -15,9 +15,8 @@
       <nav>
         <ul>
           <li><a href="#">Personajes</a></li>
-          <li><a href="#">Bosses</a></li>
           <li><a href="#">Polvos de estrellas</a></li>
-          <li><a href="#">COLABORA</a></li>
+          <li><button class="colabora-btn">COLABORA</button></li>
         </ul>
       </nav>
       <div class="user-options">
@@ -30,10 +29,9 @@
       <aside class="index">
         <h2>Índice</h2>
         <ul>
-          <li><a href="#">Biografía</a></li>
-          <li><a href="#">Añadidos</a></li>
-          <li><a href="#">Armas</a></li>
-          <li><a href="#">Armaduras</a></li>
+          <li><a href="#personalidad">Personalidad</a></li>
+          <li><a href="#atributos">Atributos y Habilidades</a></li>
+          <li><a href="#anadidos">Añadidos</a></li>
         </ul>
       </aside>
 
@@ -45,55 +43,65 @@
             <option value="en">English</option>
           </select>
         </div>
-        <div class="article-image">
-          <img src="./images/dart.jpg" alt="Imagen del Artículo" />
-        </div>
-        <article>
-          <h3>Biografía</h3>
-          <p>
-            Dart Feld (ダート・フェルド, Dāto Ferudo) es el protagonista de The
-            Legend of Dragoon. Es el hijo de Zieg Feld y Claire Feld, además de
-            uno de los sobrevivientes de su pueblo natal, Neet, que fue atacado
-            por el "Monstruo Negro" quien mató a la mayoría de las personas del
-            pueblo. Años después, Dart parte en la búsqueda de pistas sobre el
-            Monstruo Negro. Pero para su sorpresa, a la vuelta de su viaje, le
-            espera una gran aventura por delante.
-          </p>
-          <p>
-            Dart es un joven cuya vida se volvió una tragedia cuando un ataque a
-            su pueblo acabó con todo lo que una vez amó. A pesar de que su
-            corazón es duro, Dart tiene una actitud positiva y siempre ayuda a
-            un amigo si lo necesita. Su lealtad y valentía inquebrantable se
-            destaca a lo largo de su aventura. No se guardará ninguna de las
-            emociones que yacían ocultas en su interior, él crecerá en su viaje
-            para vengar la muerte de sus padres.
-          </p>
+        <div class="article-body">
+          <div class="article-image">
+            <img src="./images/dart.jpg" alt="Imagen del Artículo" />
+          </div>
+          <article>
+            <p>
+              Dart Feld (ダート・フェルド, Dāto Ferudo) es el protagonista de
+              The Legend of Dragoon. Es el hijo de Zieg Feld y Claire Feld,
+              además de uno de los sobrevivientes de su pueblo natal, Neet, que
+              fue atacado por el "Monstruo Negro" quien mató a la mayoría de las
+              personas del pueblo. Años después, Dart parte en la búsqueda de
+              pistas sobre el Monstruo Negro. Pero para su sorpresa, a la vuelta
+              de su viaje, le espera una gran aventura por delante.
+            </p>
+            <h3 id="personalidad">Personalidad</h3>
+            <p>
+              Dart es un joven cuya vida se volvió una tragedia cuando un ataque
+              a su pueblo acabó con todo lo que una vez amó. A pesar de que su
+              corazón es duro, Dart tiene una actitud positiva y siempre ayuda a
+              un amigo si lo necesita. Su lealtad y valentía inquebrantable se
+              destaca a lo largo de su aventura.
+            </p>
 
-          <h3>Añadidos</h3>
-          <p>
-            Es el personaje todo terreno en la historia siendo, literalmente, el
-            del medio entre todas las estadísticas, Dart tiene una sorprendente
-            cantidad de habilidad de supervivencia. Teniendo en cuenta todos los
-            enemigos de agua que los desarrolladores pusieron en juego. El
-            fuego, atributo de Dart es uno de los mejores elementos para la
-            ofensiva. Dart también es el personaje con más Añadidos que aprender
-            y no es una sorpresa, ya que se ve obligado a estar al principio de
-            las batallas la mayoría de las veces. El intervalo para sus
-            adiciones del jugador es muy amigable, así que no habrá frustración
-            a diferencia de otros personajes. En general, Dart no tiene
-            verdaderos puntos fuertes o débiles, aunque se podría destacarlo si
-            se hace un buen uso de su elemento fuego. Sin embargo, él es el
-            miembro masculino con el atributo mágico más fuerte.
-          </p>
-        </article>
+            <h3 id="atributos">Atributos y Habilidades</h3>
+            <p>
+              Es el personaje todo terreno en la historia, siendo literalmente
+              el del medio entre todas las estadísticas. Su atributo de fuego lo
+              convierte en un personaje ofensivo fuerte. Tiene una buena
+              capacidad de supervivencia y destaca si se aprovecha bien su
+              elemento.
+            </p>
+
+            <h3 id="anadidos">Añadidos</h3>
+            <p>
+              Dart es el personaje con más añadidos en el juego, lo que le
+              permite ejecutar una gran variedad de combos en combate.
+            </p>
+          </article>
+        </div>
       </section>
 
       <aside class="related-articles">
-        <input type="text" placeholder="Buscar..." class="search-bar" />
+        <div class="search-container">
+          <input type="text" placeholder="Buscar..." class="search-bar" />
+          <span class="search-icon">🔍</span>
+        </div>
         <div class="related-list">
-          <div class="related-item">Artículo Relacionado 1</div>
-          <div class="related-item">Artículo Relacionado 2</div>
-          <div class="related-item">Artículo Relacionado 3</div>
+          <div class="related-item">
+            <img src="./images/shana-info.jpg" alt="Imagen de Shana" />
+            <p>Shana</p>
+          </div>
+          <div class="related-item">
+            <img src="./images/meru-info.jpeg" alt="Imagen de Meru" />
+            <p>Meru</p>
+          </div>
+          <div class="related-item">
+            <img src="./images/lloyd-info.jpeg" alt="Imagen de Lloyd" />
+            <p>Lloyd</p>
+          </div>
         </div>
       </aside>
     </main>
