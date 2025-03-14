@@ -30,6 +30,7 @@ header .logo img {
 
 header nav ul {
     display: flex;
+    align-items: center;
     gap: 20px;
     list-style-type: none;
     padding-left: 0;
@@ -102,7 +103,7 @@ header .user-options button {
 }
 
 .profile-header h2 {
-    color: #91278F;
+    color: #FF9D4C;
     font-size: 24px;
     margin-bottom: 5px;
 }

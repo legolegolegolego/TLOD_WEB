@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="legolegolegolego" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./estilos/profile_dark.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="">
+          <img src="./images/tlod-logo.webp" alt="Logo The Legend of Dragoon" />
+        </a>
+        <h1>The Legend of Dragoon API</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Personajes</a></li>
+          <li><a href="#">Polvos de estrellas</a></li>
+          <li><button class="colabora-btn">COLABORA</button></li>
+        </ul>
+      </nav>
+      <div class="user-options">
+        <button class="btn-login">Login</button>
+        <button class="btn-signup">Sign Up</button>
+        <button id="theme-toggle">🌓</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="user-profile">
+        <div class="profile-header">
+          <h2>Login</h2>
+          <form id="login-form" class="profile-info">
+            <div class="form-group">
+              <label for="email">Correo Electrónico:</label>
+              <input type="email" id="email" name="email" placeholder="juan.perez@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="save-btn">Iniciar Sesión</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-media">
+        <a href="#"><img src="./images/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="./images/github.png" alt="GitHub" /></a>
+        <a href="#"><img src="./images/reddit.png" alt="Reddit" /></a>
+      </div>
+      <p>Todos los derechos reservados &copy; 2025</p>
+      <div class="contact">
+        <a href="#">Contacto</a>
+      </div>
+    </footer>
+
+    <script src="profile.js"></script>
+  </body>
+</html>
