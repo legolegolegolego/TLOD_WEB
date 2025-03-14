@@ -14,6 +14,7 @@ body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Evitamos el scroll horizontal */
 }
 
 /* --- HEADER --- */
@@ -27,11 +28,16 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
+    box-sizing: border-box; /* Aseguramos que ocupe toda la pantalla */
 }
 
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 .logo img {
@@ -39,11 +45,13 @@ header {
     margin-right: 10px;
 }
 
+/* Menú de navegación */
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
     align-items: center;
+    width: auto;
 }
 
 nav ul li {
@@ -60,21 +68,6 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #FFDA79;
-}
-
-.colabora-btn {
-    background-color: #FF9D4C;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.colabora-btn:hover {
-    background-color: #E88A3B;
 }
 
 /* --- OPCIONES DE USUARIO --- */
@@ -109,6 +102,7 @@ main {
     flex-wrap: wrap;
     padding: 20px;
     gap: 20px;
+    justify-content: center;
 }
 
 /* --- ÍNDICE --- */
@@ -149,14 +143,17 @@ main {
     min-width: 400px;
     padding: 20px;
     position: relative;
+    width: 100%;
 }
 
 .article-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
+/* Selector de idioma */
 #language-selector {
     padding: 5px;
     border-radius: 5px;
@@ -268,6 +265,8 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%; /* Aseguramos que ocupe todo el ancho */
+    box-sizing: border-box; /* Evitamos que se salga del contenedor */
 }
 
 footer .social-media img {
@@ -291,11 +290,40 @@ footer .contact a:hover {
     color: #FFDA79;
 }
 
+/* --- BOTÓN COLABORA --- */
+.colabora-btn {
+    background-color: #FF9D4C;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.colabora-btn:hover {
+    background-color: #E88A3B;
+}
+
 /* --- MEDIA QUERIES --- */
 @media screen and (max-width: 768px) {
+    /* Ajuste para evitar scroll horizontal */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Para asegurar que el header y footer ocupen toda la pantalla */
+    header, footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Ajuste de la estructura principal */
     main {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .index,
@@ -305,25 +333,79 @@ footer .contact a:hover {
         max-width: 600px;
     }
 
+    /* Menú de navegación móvil */
     nav ul {
+        display: none; /* Ocultamos el menú por defecto */
         flex-direction: column;
         gap: 10px;
+        width: 100%;
+        padding: 10px 0;
+        background-color: #91278F;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        box-sizing: border-box;
     }
 
-    .user-options {
-        flex-direction: column;
-        gap: 5px;
+    nav ul.show {
+        display: block; /* Mostramos el menú cuando tenga la clase show */
     }
 
-    /* Ajustamos el logo y el título en dispositivos móviles */
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    /* Ajuste para el título */
     .logo {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    /* Aseguramos que la imagen del artículo sea visible y esté alineada correctamente */
+    .logo img {
+        margin-bottom: 5px;
+    }
+
+    /* Botón de hamburguesa */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        position: relative;
+    }
+
+    .hamburger div {
+        width: 100%;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger.show div:nth-child(1) {
+        transform: rotate(45deg);
+        position: absolute;
+        top: 8px;
+    }
+
+    .hamburger.show div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.show div:nth-child(3) {
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 8px;
+    }
+
+    /* Ajuste de la imagen */
     .article-image img {
         width: 100%;
         max-width: 200px;
