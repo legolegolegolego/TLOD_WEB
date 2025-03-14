@@ -293,7 +293,7 @@ footer .contact a:hover {
 /* --- BOTÓN COLABORA --- */
 .colabora-btn {
     background-color: #FF9D4C;
-    color: white;
+    color: #0C0C0C;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -308,7 +308,7 @@ footer .contact a:hover {
 
 /* --- MEDIA QUERIES --- */
 @media screen and (max-width: 768px) {
-    /* Ajuste para evitar scroll horizontal */
+    /* Evitar el scroll horizontal */
     body {
         overflow-x: hidden;
     }
@@ -317,6 +317,7 @@ footer .contact a:hover {
     header, footer {
         width: 100%;
         box-sizing: border-box;
+        position: relative; /* Cambiar sticky por relative */
     }
 
     /* Ajuste de la estructura principal */
@@ -324,6 +325,7 @@ footer .contact a:hover {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        padding: 10px 20px;
     }
 
     .index,
@@ -331,6 +333,7 @@ footer .contact a:hover {
     .related-articles {
         width: 100%;
         max-width: 600px;
+        margin: 10px 0;
     }
 
     /* Menú de navegación móvil */
@@ -362,10 +365,12 @@ footer .contact a:hover {
         text-align: center;
     }
 
-    /* Ajuste para el título */
+    /* Ajuste para el título del logo */
     .logo {
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
+        text-align: center;
     }
 
     .logo img {
@@ -411,5 +416,52 @@ footer .contact a:hover {
         max-width: 200px;
         margin: 0 auto;
         display: block;
+    }
+
+    /* Ajustes para los botones de Login y Sign Up */
+    .user-options {
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center; /* Aseguramos que estén más cerca */
+        align-items: center;
+    }
+
+    .user-options a {
+        display: block;
+        width: 80%;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 5px;
+        background-color: #FF9D4C;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .user-options a:hover {
+        background-color: #E88A3B;
+    }
+
+    /* Ajuste de footer */
+    footer {
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .social-media {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer .social-media img {
+        height: 30px;
+        margin: 0 5px;
+    }
+
+    footer .contact a {
+        font-size: 16px;
     }
 }
