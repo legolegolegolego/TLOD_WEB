@@ -106,6 +106,43 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
+/* --- ERROR 404 --- */
+.error-404 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.error-message {
+    flex: 1;
+    max-width: 60%;
+}
+
+.error-message h2 {
+    font-size: 36px;
+    color: #FF9D4C;
+    margin-bottom: 10px;
+}
+
+.error-message p {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.error-image {
+    flex: 1;
+    max-width: 35%;
+    text-align: center;
+}
+
+.error-image img {
+    width: 100%;
+    max-width: 250px; /* Ajusta el tamaño de la imagen */
+    border-radius: 8px;
+}
+
 /* --- CONTENIDO PRINCIPAL --- */
 main {
     display: flex;
