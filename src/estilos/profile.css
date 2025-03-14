@@ -1,0 +1,310 @@
+/* Reseteo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f4f4f4;
+    color: #0c0c0c;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #91278f;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header .user-options {
+    display: flex;
+    gap: 10px;
+}
+
+header .user-options button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Logo y título */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.logo img {
+        margin-bottom: 5px;
+    }
+
+/* Perfil de Usuario */
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado del perfil */
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #91278F;
+    margin-bottom: 10px;
+}
+
+.profile-header h2 {
+    color: #91278F;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.profile-header p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Formulario de edición */
+.profile-info {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info h2 {
+    text-align: center;
+    color: #91278F;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0c0c0c;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #91278F;
+    box-shadow: 0 0 5px rgba(145, 39, 143, 0.5);
+}
+
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #91278f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.save-btn:hover {
+    background-color: #ff9d4c;
+}
+
+/* Sección de favoritos */
+.favorites-section {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.favorites-section h3 {
+    color: #91278F;
+    margin-bottom: 10px;
+}
+
+.favorites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.favorite-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+.favorite-item:hover {
+    transform: scale(1.05);
+}
+
+.favorite-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.favorite-item p {
+    margin-top: 10px;
+    color: #0c0c0c;
+}
+
+.edit-favorites {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff9d4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.edit-favorites:hover {
+    background-color: #e88a3b;
+}
+
+/* Footer */
+footer {
+    background-color: #91278f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer .social-media img {
+    height: 30px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-media img:hover {
+    transform: scale(1.2);
+}
+
+footer .contact a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer .contact a:hover {
+    color: #FFDA79;
+}
+
+/* Botón Colabora */
+.colabora-btn {
+    background-color: #FF9D4C;
+    color: #0C0C0C;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.colabora-btn:hover {
+    background-color: #E88A3B;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .user-profile {
+        padding: 20px;
+    }
+
+    .profile-header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .favorites-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .favorite-item {
+        width: 80%;
+    }
+}
