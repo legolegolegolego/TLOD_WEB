@@ -14,7 +14,8 @@ body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Evitamos el scroll horizontal */
+    overflow-x: hidden;
+    /* Evitamos el scroll horizontal */
 }
 
 /* --- HEADER --- */
@@ -29,7 +30,8 @@ header {
     top: 0;
     z-index: 1000;
     width: 100%;
-    box-sizing: border-box; /* Aseguramos que ocupe toda la pantalla */
+    box-sizing: border-box;
+    /* Aseguramos que ocupe toda la pantalla */
 }
 
 /* Logo */
@@ -158,7 +160,7 @@ main {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #91278F;
-    color: #91278F;
+    color: #0C0C0C;
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -265,8 +267,10 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%; /* Aseguramos que ocupe todo el ancho */
-    box-sizing: border-box; /* Evitamos que se salga del contenedor */
+    width: 100%;
+    /* Aseguramos que ocupe todo el ancho */
+    box-sizing: border-box;
+    /* Evitamos que se salga del contenedor */
 }
 
 footer .social-media img {
@@ -308,16 +312,19 @@ footer .contact a:hover {
 
 /* --- MEDIA QUERIES --- */
 @media screen and (max-width: 768px) {
+
     /* Evitar el scroll horizontal */
     body {
         overflow-x: hidden;
     }
 
     /* Para asegurar que el header y footer ocupen toda la pantalla */
-    header, footer {
+    header,
+    footer {
         width: 100%;
         box-sizing: border-box;
-        position: relative; /* Cambiar sticky por relative */
+        position: relative;
+        /* Cambiar sticky por relative */
     }
 
     /* Ajuste de la estructura principal */
@@ -338,7 +345,8 @@ footer .contact a:hover {
 
     /* Menú de navegación móvil */
     nav ul {
-        display: none; /* Ocultamos el menú por defecto */
+        display: none;
+        /* Ocultamos el menú por defecto */
         flex-direction: column;
         gap: 10px;
         width: 100%;
@@ -351,7 +359,8 @@ footer .contact a:hover {
     }
 
     nav ul.show {
-        display: block; /* Mostramos el menú cuando tenga la clase show */
+        display: block;
+        /* Mostramos el menú cuando tenga la clase show */
     }
 
     nav ul li {
@@ -422,7 +431,8 @@ footer .contact a:hover {
     .user-options {
         flex-direction: column;
         gap: 5px;
-        justify-content: center; /* Aseguramos que estén más cerca */
+        justify-content: center;
+        /* Aseguramos que estén más cerca */
         align-items: center;
     }
 
